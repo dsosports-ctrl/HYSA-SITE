@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYSA - Haryana Yogasana Sports Association</title>
+    <!-- Google Fonts & Icons -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#home" class="logo"><i class="fa-solid fa-medal"></i> HY<span>SA</span></a>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#events" class="nav-link"><i class="fa-solid fa-calendar"></i> Event</a></li>
+                <li><a href="#media-section" class="nav-link"><i class="fa-solid fa-images"></i> Media</a></li>
+                <li><a href="#results" class="nav-link"><i class="fa-solid fa-trophy"></i> Result</a></li>
+                <li><a href="#downloads" class="nav-link"><i class="fa-solid fa-download"></i> Download</a></li>
+                <!-- UPDATED: Added Stopwatch link to nav list -->
+                <li><a href="https://stopwatchfortimejudge.netlify.app" target="_blank" class="nav-link"><i class="fa-solid fa-stopwatch text-cyan"></i> Stopwatch</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                <li><a href="#home" class="nav-link nav-btn-highlight">Registration</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <h1>Haryana Yogasana <br><span class="gradient-text">Sports Association</span></h1>
+            <p>Official state body managing dynamic athletic matrices and scoring workflows for championships across Haryana.</p>
+            <div class="hero-cta">
+                <a href="#home" class="btn-main btn-primary">Championship Reg.</a>
+                <!-- UPDATED: Integrated time judge app directly onto action layer -->
+                <a href="https://stopwatchfortimejudge.netlify.app" target="_blank" class="btn-main btn-stopwatch"><i class="fa-solid fa-stopwatch"></i> Open Stopwatch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section (November Calendar) -->
+    <section id="events">
+        <div class="section-header"><h2><i class="fa-solid fa-fire text-orange"></i> November Championships</h2></div>
+        <div class="events-grid">
+            <div class="event-card sub-junior"><span class="event-date">Nov 05 - Nov 08, 2026</span><h3>Sub Junior State</h3><p class="venue-text"><i class="fa-solid fa-location-dot"></i> Palwal Sports Complex</p></div>
+            <div class="event-card junior"><span class="event-date">Nov 12 - Nov 15, 2026</span><h3>Junior State</h3><p class="venue-text"><i class="fa-solid fa-location-dot"></i> Gurugram Yoga Arena</p></div>
+            <div class="event-card senior"><span class="event-date">Nov 19 - Nov 22, 2026</span><h3>Senior State</h3><p class="venue-text"><i class="fa-solid fa-location-dot"></i> Jind Indoor Stadium</p></div>
+            <div class="event-card senior-abc"><span class="event-date">Nov 26 - Nov 29, 2026</span><h3>Senior A-B-C State</h3><p class="venue-text"><i class="fa-solid fa-location-dot"></i> Panchkula Sports Arena</p></div>
+        </div>
+    </section>
+
+    <!-- Media Center Section -->
+    <section id="media-section">
+        <div class="section-header"><h2><i class="fa-solid fa-photo-film text-cyan"></i> Media Center</h2></div>
+        <div class="gallery-tabs">
+            <button class="tab-btn active btn-photo" data-type="photo">Photos</button>
+            <button class="tab-btn btn-video" data-type="video">Videos</button>
+            <button class="tab-btn btn-press" data-type="press">Press Gallery</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results">
+        <div class="section-header"><h2><i class="fa-solid fa-trophy text-gold"></i> Championship Results</h2></div>
+        <div class="results-grid">
+            <div class="res-box"><h4>Sub Junior Records</h4><div class="res-row"><span>Amit Kumar (Rohtak)</span><strong>48.50s</strong></div><div class="res-row"><span>Neha Sharma (Hisar)</span><strong>46.20s</strong></div></div>
+            <div class="res-box"><h4>Junior Records</h4><div class="res-row"><span>Rohit Verma (Gurugram)</span><strong>52.10s</strong></div><div class="res-row"><span>Priya Hooda (Jhajjar)</span><strong>50.80s</strong></div></div>
+            <div class="res-box"><h4>Senior Records</h4><div class="res-row"><span>Vikas Singh (Sonipat)</span><strong>64.30s</strong></div><div class="res-row"><span>Kavita Rani (Sirsa)</span><strong>61.90s</strong></div></div>
+            <div class="res-box"><h4>Senior A-B-C Records</h4><div class="res-row"><span>Div A: Rahul (Panipat)</span><strong>72.50s</strong></div><div class="res-row"><span>Div B: Sunita (Karnal)</span><strong>69.10s</strong></div></div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads">
+        <div class="section-header"><h2><i class="fa-solid fa-file-pdf text-lime"></i> Official Circulars</h2></div>
+        <div class="downloads-box">
+            <div class="dl-card"><span>Registration Form</span><a href="#" class="dl-btn">Download</a></div>
+            <div class="dl-card"><span>Official Syllabus Manual</span><a href="#" class="dl-btn">Download</a></div>
+            <div class="dl-card"><span>Championship Event Details</span><a href="#" class="dl-btn">Download</a></div>
+            <div class="dl-card"><span>Fitness & Medical Form</span><a href="#" class="dl-btn">Download</a></div>
+            <div class="dl-card"><span>Self Declaration Form</span><a href="#" class="dl-btn">Download</a></div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Us Section -->
+    <footer id="contact">
+        <div class="helpline-box">
+            <i class="fa-solid fa-phone-volume"></i>
+            <div><span>HELPLINE NUMBER</span><a href="tel:+919034222280">+91 9034222280</a></div>
+        </div>
+        <p>&copy; 2026 Haryana Yogasana Sports Association. All Rights Reserved.</p>
+    </footer>
+
+    <!-- External JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
